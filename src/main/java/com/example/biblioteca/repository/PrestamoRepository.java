@@ -49,12 +49,10 @@ public class PrestamoRepository {
         return null;
     }
 
-    public Prestamo eliminar(int id) {
         Prestamo p = buscarPorId(id);
         if (p != null) {
             prestamos.remove(p);
         }
-        return p;
     }
 
     public PrestamoRepository() {

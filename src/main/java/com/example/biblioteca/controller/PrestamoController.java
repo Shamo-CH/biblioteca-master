@@ -22,22 +22,14 @@ public class PrestamoController {
     }
 
     @PostMapping
-    public Prestamo crear(@RequestBody Prestamo p) {
-        return repository.guardar(p);
     }
 
     @GetMapping("/{id}")
-    public Prestamo obtener(@PathVariable int id) {
-        return repository.buscarPorId(id);
     }
 
     @PutMapping("/{id}")
-    public Prestamo editar(@PathVariable int id, @RequestBody Prestamo p) {
-        return repository.actualizar(p);
     }
 
     @DeleteMapping("/{id}")
-    public Prestamo eliminar(@PathVariable int id) {
-        return repository.eliminar(id);
     }
 }
