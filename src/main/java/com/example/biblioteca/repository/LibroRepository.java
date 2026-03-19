@@ -63,4 +63,20 @@ public class LibroRepository {
     public int totalLibros(){
         return libros.size();
     }
+
+    public LibroRepository(){
+        libros.add(new Libro(1, 2018, "9789569646638", "Fuego y Sangre","George R. R. Martin","Penguin Random House Grupo Editorial"));
+        libros.add(new Libro(2,2014,"9789563494150", "Quique Hache: El Mall Embrujado y Otras Historias","Sergio Gomez", "Sm Ediciones"));
+        libros.add(new Libro(3,2020, "9781484256251", "Spring Boot Persistence Best Practices","J.K Rowling", "Salamandra"));
+        libros.add(new Libro(4,2024,"9785660757552","Harry Potter y la Piedra Filosofal","J.K Rowling", "Scholastic"));
+        libros.add(new Libro(5,1999,"9780439139601","Harry Potter y El Prisionero de Azkaban","J.K Rowling", "Scholastic"));
+        libros.add(new Libro(6,2000,"9780439136365","Harry Potter y el cáliz de fuego","J.K Rowling", "Scholastic"));
+        libros.add(new Libro(7,2008,"9780321127426","Effective Java","Joshua Bloch","Addison Wesley"));
+        libros.add(new Libro(8,2017,"9780134685991","Clean Architecture","Robert C. Martin", "Prentice Hall"));
+        libros.add(new Libro(9,1994,"9780201633610","Design Patterns", "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides", "Addison Wesley"));
+        libros.add(new Libro(10,2008,"9780132350884","Clean code", "Robert C. Martin", "Prentice Hall"));
+
+    }
+
+
 }
