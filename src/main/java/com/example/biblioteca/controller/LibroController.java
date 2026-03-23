@@ -2,7 +2,10 @@ package com.example.biblioteca.controller;
 
 import com.example.biblioteca.model.Libro;
 import com.example.biblioteca.service.LibroService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,8 +23,9 @@ public class LibroController {
     }
 
     @PostMapping()
-    public Libro agregarLibro(@RequestBody Libro libro){
-        return service.save(libro);
+    public ResponseEntity<Libro> agregarLibro(@Valid @RequestBody Libro libro){
+        service.save(libro);
+        return ResponseEntity.status(HttpStatus.CREATED).body(libro);
     }
 
     @GetMapping("{id}")

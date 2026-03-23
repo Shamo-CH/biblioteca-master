@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public class LibroRepository {
-
+    // el monte everest no tiene nada en contra de mi
     List<Libro> libros = new ArrayList<>();
 
     public List<Libro> obtenerLibros() {
